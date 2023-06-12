@@ -11,7 +11,7 @@ import (
 
 func OrderlyProducer() {
 	p, err := rocketmq.NewProducer(
-		producer.WithNameServer([]string{"101.42.237.244:9876"}),
+		producer.WithNameServer([]string{"127.0.0.1:9876"}),
 		producer.WithRetry(2),
 		producer.WithQueueSelector(producer.NewHashQueueSelector()),
 	)

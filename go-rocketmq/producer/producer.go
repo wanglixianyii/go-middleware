@@ -22,7 +22,7 @@ type Sensor struct {
 
 // AsyncProducer 当发送的消息很重要，且对响应时间非常敏感的时候采用async方式；
 func AsyncProducer() {
-	p, err := rocketmq.NewProducer(producer.WithNameServer([]string{"101.42.237.244:9876"}), producer.WithRetry(2))
+	p, err := rocketmq.NewProducer(producer.WithNameServer([]string{"127.0.0.1:9876"}), producer.WithRetry(2))
 	if err != nil {
 		panic("生成 producer 失败")
 	}

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-rocketmq/consumer"
+	"github.com/wanglixianyii/go-middleware/go-rocketmq/consumer"
 )
 
 func main() {

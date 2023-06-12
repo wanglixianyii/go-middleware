@@ -14,7 +14,7 @@ import (
 func OrderlyConsumer() {
 
 	c, err := rocketmq.NewPushConsumer(
-		consumer.WithNameServer([]string{"101.42.237.244:9876"}),
+		consumer.WithNameServer([]string{"127.0.0.1:9876"}),
 		consumer.WithGroupName("orderly_test"),          // 多个实例
 		consumer.WithConsumerModel(consumer.Clustering), // 一条消息在一个组中只有一个consumer消费
 		consumer.WithConsumerOrder(true),                // *顺序接收 必须
