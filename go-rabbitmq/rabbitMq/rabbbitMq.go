@@ -7,7 +7,7 @@ import (
 )
 
 // url格式：amqp://账号：密码@rabbitmq服务地址/vhost
-const MQURL = "amqp://admin:admin@101.42.237.244:5672"
+const MQURL = "amqp://admin:admin@127.0.0.1:5672"
 
 type RabbitMQ struct {
 	sync.Mutex
